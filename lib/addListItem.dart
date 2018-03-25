@@ -13,20 +13,6 @@ class MyApp extends StatelessWidget {
   }
 }
 
-// class ScaffoldGenerator extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return new Scaffold(
-//         appBar: new AppBar(
-//           title: new Text('Names Generator'),
-//         ),
-//         body: new Center(
-//           child: new RandomWords(),
-//         ),
-//       );
-//   }
-// }
-
 class RandomWords extends StatefulWidget {
   @override
   createState() => new RandomWordsState();
@@ -69,23 +55,3 @@ class RandomWordsState extends State<RandomWords> {
       ),
       );
   }
-
-  Widget _buildListView() {
-    return new ListView(
-                children: <Widget>[
-                  new ListTile(
-                    leading: new Icon(Icons.map),
-                    title: new Text('Map'),
-                  ),
-                  new ListTile(
-                    leading: new Icon(Icons.photo_album),
-                    title: new Text('Album'),
-                  ),
-                  new ListTile(
-                    leading: new Icon(Icons.phone),
-                    title: new Text('Phone'),
-                  ),
-                ],
-              );
-  }
-}
